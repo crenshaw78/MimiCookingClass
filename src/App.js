@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Jumbotron from "./Components/Jumbotron";
+import About from "./Components/About";
+import Schedule from "./Components/Schedule";
+import Gallery from "./Components/Gallery";
+import BookEvent from "./Components/BookEvent";
+import SocialMedia from "./Components/SocialMedia";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Jumbotron />
+      <div style={{width: '90%', margin: 'auto'}}>
+        <About />
+        <Schedule />
+        <Gallery />
+        <BookEvent />
+        <SocialMedia />
+      </div>
     </div>
   );
 }

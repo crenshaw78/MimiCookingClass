@@ -5,7 +5,7 @@ const classPictureList = [
   },
   {
     image: '2CE1BB57-FFAF-421E-814D-DC1EBF64F7E5.jpeg',
-    message: 'This message is much larger than the text box can handle. I did it for testing purposes to see how it performs with a message too long.'
+    message: 'This message is much larger than the text box can handle. I did it for testing purposes to see how it performs with a message too long for the code to handle so we can see what happens and if anything breaks.'
   },
   {
     image: '4C2AF1DC-74FF-4F90-96FF-36141F7C1FED_1_105_c.jpeg',

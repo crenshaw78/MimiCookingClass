@@ -2,9 +2,10 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 
 function Schedule() {
+
   return (
-    <Row style={{marginTop: '6vmin'}}>
-      <Col sm={5}>
+    <Row id='schedule' style={{marginTop: '6vmin'}}>
+      <Col sm={5} style={{marginBottom: '6vmin'}}>
         <Image fluid
           src={require(`../assets/images/image2.jpeg`)}
           alt='carousel slide'
@@ -12,7 +13,7 @@ function Schedule() {
         />
       </Col>
       <Col sm={7}>
-        <h1>Next Class:</h1>
+        <h1>Next Class</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <h3>Saturday</h3>
         <Row>

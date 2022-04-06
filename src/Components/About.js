@@ -3,8 +3,9 @@ import { Row, Col } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaInstagram, FaPinterest } from "react-icons/fa";
 
 function About() {
+  
   return (
-    <Row style={{marginTop: '6vmin'}}>
+    <Row id='about' style={{marginTop: '6vmin'}}>
       <Col sm={9}>
         <h1>Mimi's Cooking-Class</h1>
         <h3>~ Learn to Cook ~</h3>

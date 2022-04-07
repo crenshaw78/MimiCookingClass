@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
-import Contact from "./Contact";
 
 function BookEvent() {
 
@@ -10,19 +9,24 @@ function BookEvent() {
         <h1>Book an Event</h1>
         <Row>
           <Col sm={6}>
-            <p>Wedding Receptions</p>
+            <p>Receptions</p>
           </Col>
           <Col sm={6}>
             <p>Corporate Catering</p>
           </Col>
           <Col sm={6}>
-            <p>Formal Parties</p>
+            <p>Formal Dinners</p>
           </Col>
           <Col sm={6}>
             <p>Special Events</p>
           </Col>
+          <Col sm={6}>
+            <p>Hors D'oeuvres</p>
+          </Col>
+          <Col sm={6}>
+            <p>Charcuterie</p>
+          </Col>
         </Row>
-        <Contact />
       </Col>
       <Col sm={6}>
         <Image fluid

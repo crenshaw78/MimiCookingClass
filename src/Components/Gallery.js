@@ -31,7 +31,7 @@ function Gallery() {
                 alt='gallery image'
                 style={{height: '50vmin', width: '50vmin', objectFit: 'cover', padding: '1.25vmin'}}
               />
-              {textDesc === i && (
+              {(textDesc === i && !isModalOpen) && (
                 <div style={{
                   position: 'absolute',
                   bottom: '10px',

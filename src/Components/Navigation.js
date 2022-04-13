@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <Row >
       <Col sm={1}>
-        <GiCook size='10vmin' style={{background: 'grey'}}/>
+        <GiCook size='10vmin' style={{background: 'grey', borderRadius: '5vmin'}}/>
       </Col>
       <Col sm={2}>
         <a href="#about" style={{textDecoration: 'none', color: 'inherit'}}><h2>About</h2></a>

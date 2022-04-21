@@ -1,36 +1,46 @@
-const classPictureList = [
+const classList = [
   {
-    image: '0CA0DE5F-8F84-44F5-8352-8E84D2000989.jpeg',
-    message: 'Short message'
+    image: 'class1.jpg',
+    alt: 'short description',
+    name: 'Class 1',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    day: 'Saturday',
+    date: 'April 23, 2022',
+    time: '11 AM to 1 PM',
+    seats: '6',
+    cost: '195'
   },
   {
-    image: '2CE1BB57-FFAF-421E-814D-DC1EBF64F7E5.jpeg',
-    message: 'This message is much larger than the text box can handle. I did it for testing purposes to see how it performs with a message too long for the code to handle so we can see what happens and if anything breaks.'
-  },
-  {
-    image: '4C2AF1DC-74FF-4F90-96FF-36141F7C1FED_1_105_c.jpeg',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    image: '56AAE3F1-6AA5-4293-9BEB-F9E8B5FBD97F_1_105_c.jpeg',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    image: '62DF3A0B-AF23-4DCA-95C5-8E9D53385C8E_1_105_c.jpeg',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    image: '84A8363A-FC9F-409A-8589-0EF82EB499D2_1_105_c.jpeg',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    image: '430C6CCE-12C0-4EB9-9F19-7AB39EEED2FD_1_105_c.jpeg',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    image: '711DD548-E7B8-48C1-AE94-89BC938F1947_1_105_c.jpeg',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    image: 'class2.jpg',
+    alt: 'short description',
+    name: 'Class 2',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    day: 'Monday',
+    date: 'April 25, 2022',
+    time: '1 PM to 3 PM',
+    seats: '4',
+    cost: '105'
+  },{
+    image: 'class3.jpg',
+    alt: 'short description',
+    name: 'Class 3',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    day: 'Tuesday',
+    date: 'April 26, 2022',
+    time: '11 AM to 1 PM',
+    seats: '1',
+    cost: '155'
+  },{
+    image: 'class4.jpg',
+    alt: 'short description',
+    name: 'Class 4',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    day: 'Friday',
+    date: 'April 23, 2022',
+    time: '1 PM to 3 PM',
+    seats: '6',
+    cost: '95'
   }
 ]
 
-export default classPictureList;
+export default classList;

@@ -1,12 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Facebook() {
+const Facebook = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
 
+    script.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" 
+    script.nonce="La8M26By"
+    script.async = true
+    script.defer = true
+    script.crossorigin="anonymous"
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+  
   return (
-<div>
-<iframe title='facebookfeed' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcookingchannel&tabs=timeline&width=340&height=271&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="271" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0" allowFullScreen= {true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-</div>
-  );
-}
+    <React.Fragment>
+      <div id="fb-root"></div>
+      <div
+        className="fb-page"
+        data-href="https://www.facebook.com/nytcooking/"
+        data-tabs="timeline"
+        data-width=""
+        data-height=""
+        data-small-header="false"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="true"
+      >
+        <blockquote
+          cite="https://www.facebook.com/nytcooking/"
+          className="fb-xfbml-parse-ignore"
+        >
+          <a href="https://www.facebook.com/nytcooking">NYT Cooking</a>
+        </blockquote>
+      </div>
+    </React.Fragment>
+  )};
 
 export default Facebook;
+

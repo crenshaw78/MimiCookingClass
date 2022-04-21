@@ -10,16 +10,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div>
+  <div>
       <Jumbotron />
-      <div style={{width: '90%', margin: 'auto'}}>
         <About />
         <Schedule />
         <Gallery />
         <BookEvent />
         <Contact />
         <SocialMedia />
-      </div>
     </div>
   );
 }

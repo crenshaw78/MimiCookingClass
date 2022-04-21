@@ -1,32 +1,37 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
+import classList from "../assets/js/classArray";
 
 function Schedule() {
 
   return (
-    <Row id='schedule' style={{marginTop: '6vmin'}}>
-      <Col sm={5} style={{marginBottom: '6vmin'}}>
-        <Image fluid
-          src={require(`../assets/images/image2.jpeg`)}
-          alt='carousel slide'
-          style={{height: '45vmin', width: 'auto'}}
-        />
-      </Col>
-      <Col sm={7}>
-        <h1>Next Class</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <h3>Saturday</h3>
-        <Row>
-          <Col sm={4}>
-            <p>April 9th, 2022</p>
-            <p>11 AM to 1 PM</p>
-          </Col>
-          <Col sm={4}>
-            <p>6 seats available</p>
-            <p>$195 / person</p>
-          </Col>
-        </Row>
-      </Col>
+    <Row id='schedule' className="top">
+      {classList.map((cclass, i) => (
+      <Row key={'c'+i}>
+        <Col sm={5} style={{marginBottom: '6vmin'}}>
+          <Image fluid
+            src={require(`../assets/images/${cclass.image}`)}
+            alt={cclass.alt}
+            style={{height: '45vmin', width: '60vmin', objectFit: 'cover'}}
+          />
+        </Col>
+        <Col sm={7}>
+          <h1>{cclass.name}</h1>
+          <p>{cclass.desc}</p>
+          <h3>{cclass.day}</h3>
+          <Row>
+            <Col sm={4}>
+              <p>{cclass.date}</p>
+              <p>{cclass.time}</p>
+            </Col>
+            <Col sm={4}>
+              <p>{cclass.seats} seats available</p>
+              <p>${cclass.cost} / person</p>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+      ))}
     </Row>
   );
 }

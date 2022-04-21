@@ -1,40 +1,30 @@
 import React from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Carousel, Row, Col, Image } from "react-bootstrap";
+import eventList from "../assets/js/eventArray";
 
 function BookEvent() {
 
   return (
-    <Row id='book' style={{marginTop: '6vmin'}}>
-      <Col sm={6}>
+    <Row id='book' className="top">
         <h1>Book an Event</h1>
-        <Row>
-          <Col sm={6}>
-            <p>Receptions</p>
-          </Col>
-          <Col sm={6}>
-            <p>Corporate Catering</p>
-          </Col>
-          <Col sm={6}>
-            <p>Formal Dinners</p>
-          </Col>
-          <Col sm={6}>
-            <p>Special Events</p>
-          </Col>
-          <Col sm={6}>
-            <p>Hors D'oeuvres</p>
-          </Col>
-          <Col sm={6}>
-            <p>Charcuterie</p>
-          </Col>
-        </Row>
-      </Col>
-      <Col sm={6}>
-        <Image fluid
-          src={require(`../assets/images/image1.jpeg`)}
-          alt='carousel slide'
-          style={{height: '50vmin', width: 'auto'}}
-        />
-      </Col>
+        <Carousel fade indicators={false} controls={false}>
+          {eventList.map((event, i) => (
+            <Carousel.Item key={'e'+i}>
+              <Row style={{justifyContent:'center'}}>
+                <Col sm={5}>
+                    <h4>{event.name}</h4>
+                </Col>
+                <Col sm={6}>
+                  <Image
+                    src={require(`../assets/images/${event.image}`)}
+                    alt={event.alt}
+                    style={{height: '45vmin', width: 'auto'}}
+                  />
+                </Col>
+              </Row>   
+            </Carousel.Item>
+          ))}
+        </Carousel>
     </Row>
   );
 }

@@ -11,7 +11,7 @@ function Jumbotron() {
           {foodPictureList.map((fpicture, i) => (
             <Carousel.Item key={'f'+i}>
               <img
-                className='d-block w-100'
+                className='d-block w-100 jumbo-image'
                 src={require(`../assets/images/${fpicture.image}`)}
                 alt='carousel slide'
                 style={{objectFit: 'cover', height: '60vmin'}}

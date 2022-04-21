@@ -1,19 +1,27 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Row, Col, Button } from "react-bootstrap";
 import Newsletter from "./Newsletter";
+import ContactForm from "./ContactForm";
 
 function Contact() {
 
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const toggleForm = () => {
+    setIsFormOpen(!isFormOpen);
+  }
+
   return (
-    <Row id='contact' style={{marginTop: '6vmin'}}>
-      <Col sm={4} style={{marginTop: '6vmin'}}>
-        <div style={{width: '40vmin', minHeight: '40vmin'}}>
-        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180748.7375543044!2d-93.24613681449931!3d44.939621877030845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b2d4cee4e9379f%3A0xc87291d23fda2e29!2sSt%20Paul%2C%20MN!5e0!3m2!1sen!2sus!4v1649208576788!5m2!1sen!2sus" width="300" height="300" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <Row className="top">
+      <Col sm={4}>
+        <Button className="top book-button" onClick={toggleForm}>
+          Book Now
+        </Button>
+        {console.log(isFormOpen)}
+        {isFormOpen && <ContactForm closeForm={toggleForm}/>}
       </Col>
       <Col sm={4}>
-        <h3 style={{marginTop: '6vmin'}}>Mimi's Cooking Class</h3>
-        <p>123 Main Street, Anywhere, USA</p>
+        <h3 className="top">Mimi's Cooking Class</h3>
         <a href="tel:+08885551212" style={{textDecoration: 'none', color: 'inherit'}}><p>(888) 555-1212</p></a>
         <a href="mailto:mimiscookingclass@gmail.com" style={{textDecoration: 'none', color: 'inherit'}}><p>mimiscookingclass@gmail.com</p></a>
       </Col>

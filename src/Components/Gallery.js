@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Image } from 'react-bootstrap';
-import classPictureList from '../assets/js/classArray';
+import galleryPictureList from '../assets/js/galleryArray';
 import Modal from './Modal';
   
 function Gallery() {
@@ -17,17 +17,17 @@ function Gallery() {
   }
 
   return (
-    <div style={{width: '90%', margin: 'auto', marginTop: '6vmin'}}>
+    <div className="top" style={{width: '90%', margin: 'auto'}}>
       <div style={{display: 'flex', overflowX: 'scroll'}}>
         {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal}/>}
-        {classPictureList.map((cpicture, i) => (
+        {galleryPictureList.map((gpicture, i) => (
           <div key={'c'+i} style={{position: 'relative'}}
             onMouseEnter={() => setTextDesc(i)}
             onMouseLeave={() => setTextDesc(null)}
             onClick={() => toggleModal(i)}
           >
               <Image
-                src={require(`../assets/images/${cpicture.image}`)}
+                src={require(`../assets/images/${gpicture.image}`)}
                 alt='gallery image'
                 style={{height: '50vmin', width: '50vmin', objectFit: 'cover', padding: '1.25vmin'}}
               />
@@ -35,7 +35,7 @@ function Gallery() {
                 <div style={{
                   position: 'absolute',
                   bottom: '10px',
-                  backgroundColor: 'white',
+                  backgroundColor: 'rgba(254, 221, 0, 1)',
                   marginLeft: '12px',
                   marginRight: '10px',
                   padding: '1.25vmin',
@@ -44,7 +44,7 @@ function Gallery() {
                   overflow: 'hidden',
                   opacity: '80%' 
                 }}>
-                  <p>{cpicture.message}</p> 
+                  <p>{gpicture.message}</p> 
                 </div>  
               )}
           </div>    

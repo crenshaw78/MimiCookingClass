@@ -4,7 +4,7 @@ const Facebook = () => {
   useEffect(() => {
     const script = document.createElement('script');
 
-    script.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" 
+    script.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4" 
     script.nonce="La8M26By"
     script.async = true
     script.defer = true
@@ -18,18 +18,17 @@ const Facebook = () => {
   }, []);
   
   return (
-    <React.Fragment>
+    <div className="top">
       <div id="fb-root"></div>
       <div
-        className="fb-page"
+        className="fb-like-box"
         data-href="https://www.facebook.com/nytcooking/"
-        data-tabs="timeline"
-        data-width=""
-        data-height=""
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true"
+        data-width="400"
+        data-height="600"
+        data-colorscheme="light"
+        data-show-faces="false"
+        data-stream="true"
+        data-show-border="false"
       >
         <blockquote
           cite="https://www.facebook.com/nytcooking/"
@@ -38,8 +37,7 @@ const Facebook = () => {
           <a href="https://www.facebook.com/nytcooking">NYT Cooking</a>
         </blockquote>
       </div>
-    </React.Fragment>
+    </div>
   )};
 
 export default Facebook;
-

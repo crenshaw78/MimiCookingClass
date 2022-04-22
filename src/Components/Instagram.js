@@ -3,11 +3,11 @@ import React from "react";
 function Instagram() {
 
   return (
-    <div>
+    <div className="top">
       <iframe
         src='https://www.instagram.com/nytcooking/embed'
         title='instagram'
-        height="400" width="300"
+        height="440" width="400"
       >
       </iframe>
     </div>

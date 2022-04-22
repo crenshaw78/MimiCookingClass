@@ -9,7 +9,15 @@ function SocialMedia() {
   return (
     <Row id='social' className="top">
       <h1>Social Media</h1>
-
+      <Col sm={4}>
+        <Instagram />
+      </Col>
+      <Col sm={4}>
+        <Facebook />
+      </Col>
+      <Col sm={4}>
+        <Tiktok />
+      </Col>
     </Row>
   );
 }

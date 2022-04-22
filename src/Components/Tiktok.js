@@ -16,13 +16,13 @@ function Tiktok() {
   }, []);
 
   return (
-    <div>
+    <div className="top">
       <blockquote 
         className="tiktok-embed" 
         cite="https://www.tiktok.com/@the_pastaqueen" 
         data-unique-id="the_pastaqueen"  
         data-embed-type="creator" 
-        style={{maxWidth: '400px', minWidth: '288px'}} 
+        style={{width: '400px', height: '600px'}} 
         > 
         <section> 
           <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@the_pastaqueen?refer=creator_embed">@the_pastaqueen</a> 

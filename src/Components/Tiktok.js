@@ -22,7 +22,7 @@ function Tiktok() {
         cite="https://www.tiktok.com/@the_pastaqueen" 
         data-unique-id="the_pastaqueen"  
         data-embed-type="creator" 
-        style={{width: '400px', height: '600px'}} 
+        style={{width: '360', height: '500'}} 
         > 
         <section> 
           <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@the_pastaqueen?refer=creator_embed">@the_pastaqueen</a> 

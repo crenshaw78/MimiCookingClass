@@ -32,45 +32,43 @@ function ContactForm({closeForm}) {
   }
 
   return (
-    <div className="formBackdrop">
       <div className="formContainer">
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name" style={{marginRight: 23, marginBottom: 15}}>Contact Name:</label><br />
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" style={{width: '60%'}} />
-        </div>
-        <div>
-          <label htmlFor="email" style={{marginRight: 28, marginBottom: 15}}>Contact Email:</label><br />
-          <input type="email" defaultValue={email} onBlur={handleChange} name="email" style={{width: '60%'}} />
-        </div>
-        <div>
-          <label htmlFor="event" style={{marginRight: 28, marginBottom: 15}}>Event Type:</label><br />
-          <input type="event" defaultValue={email} onBlur={handleChange} name="event" style={{width: '60%'}} />
-        </div>
-        <div>
-          <label htmlFor="date" style={{marginRight: 28, marginBottom: 15}}>Event Date:</label><br />
-          <input type="date" defaultValue={email} onBlur={handleChange} name="date" style={{width: '60%'}} />
-        </div>
-        <div>
-          <label htmlFor="number" style={{marginRight: 28, marginBottom: 15}}>Number of Attendees:</label><br />
-          <input type="number" defaultValue={email} onBlur={handleChange} name="number" style={{width: '60%'}} />
-        </div>
-        {errorMessage && (
+        <form className="formContent" onSubmit={handleSubmit}>
           <div>
-          <p className="error-text">{errorMessage}</p>
+            <label htmlFor="name">Contact Name:</label><br />
+            <input type="text" defaultValue={name} onBlur={handleChange} name="name" style={{width: '90%'}} />
           </div>
-        )}
-        <Row>
-          <Col sm={6}>
-            <Button type="submit">Submit </Button>
-          </Col>
-          <Col sm={6}>
-            <Button onClick={closeForm}>Close</Button>
-          </Col>
-        </Row>
-      </form>
+          <div>
+            <label htmlFor="email">Contact Email:</label><br />
+            <input type="email" defaultValue={email} onBlur={handleChange} name="email" style={{width: '90%'}} />
+          </div>
+          <div>
+            <label htmlFor="event">Event Type:</label><br />
+            <input type="event" defaultValue={email} onBlur={handleChange} name="event" style={{width: '90%'}} />
+          </div>
+          <div>
+            <label htmlFor="date">Event Date:</label><br />
+            <input type="date" defaultValue={email} onBlur={handleChange} name="date" style={{width: '90%'}} />
+          </div>
+          <div>
+            <label htmlFor="number">Number of Attendees:</label><br />
+            <input type="number" defaultValue={email} onBlur={handleChange} name="number" style={{width: '90%'}} />
+          </div>
+          {errorMessage && (
+            <div>
+            <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <Row>
+            <Col sm={6}>
+              <Button variant="success" className='formSubmit' type="submit">Submit </Button>
+            </Col>
+            <Col sm={6}>
+              <Button variant="danger" className='formClose' type='button' onClick={closeForm}>X</Button>
+            </Col>
+          </Row>
+        </form>
       </div>
-    </div>
   );
 }
 

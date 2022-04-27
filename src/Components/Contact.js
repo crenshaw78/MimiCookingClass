@@ -12,12 +12,11 @@ function Contact() {
   }
 
   return (
-    <Row className="top">
+    <Row>
       <Col sm={4}>
-        <Button className="top book-button" onClick={toggleForm}>
-          Book Now
+        <Button style={{background: '#009A44', margin: '6vmin 10vmin', fontSize: '4vmin'}} onClick={toggleForm}>
+          Book Event
         </Button>
-        {console.log(isFormOpen)}
         {isFormOpen && <ContactForm closeForm={toggleForm}/>}
       </Col>
       <Col sm={4}>

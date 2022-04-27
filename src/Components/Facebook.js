@@ -23,7 +23,7 @@ const Facebook = () => {
       <div
         className="fb-like-box"
         data-href="https://www.facebook.com/nytcooking/"
-        data-width="400"
+        data-width="360"
         data-height="600"
         data-colorscheme="light"
         data-show-faces="false"

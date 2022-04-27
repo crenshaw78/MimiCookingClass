@@ -7,7 +7,7 @@ function Instagram() {
       <iframe
         src='https://www.instagram.com/nytcooking/embed'
         title='instagram'
-        height="440" width="400"
+        height="400" width="360"
       >
       </iframe>
     </div>

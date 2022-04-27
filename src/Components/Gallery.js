@@ -17,11 +17,12 @@ function Gallery() {
   }
 
   return (
-    <div className="top" style={{width: '90%', margin: 'auto'}}>
-      <div style={{display: 'flex', overflowX: 'scroll'}}>
+    <div className="top gallery-container">
+      <div className='scrolling-gallery'>
         {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal}/>}
         {galleryPictureList.map((gpicture, i) => (
-          <div key={'c'+i} style={{position: 'relative'}}
+          <div key={'c'+i}
+            className='gallery-image-container' 
             onMouseEnter={() => setTextDesc(i)}
             onMouseLeave={() => setTextDesc(null)}
             onClick={() => toggleModal(i)}
@@ -29,21 +30,10 @@ function Gallery() {
               <Image
                 src={require(`../assets/images/${gpicture.image}`)}
                 alt='gallery image'
-                style={{height: '50vmin', width: '50vmin', objectFit: 'cover', padding: '1.25vmin'}}
+                className='gallery-image'
               />
               {(textDesc === i && !isModalOpen) && (
-                <div style={{
-                  position: 'absolute',
-                  bottom: '10px',
-                  backgroundColor: 'rgba(254, 221, 0, 1)',
-                  marginLeft: '12px',
-                  marginRight: '10px',
-                  padding: '1.25vmin',
-                  height: '20vmin',
-                  width: '47vmin',
-                  overflow: 'hidden',
-                  opacity: '80%' 
-                }}>
+                <div className='gallery-text-box'>
                   <p>{gpicture.message}</p> 
                 </div>  
               )}

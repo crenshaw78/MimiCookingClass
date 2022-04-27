@@ -8,19 +8,19 @@ function Navigation() {
     <Row >
       <Col sm={1}></Col>
       <Col sm={1}>
-        <GiCook size='10vmin' style={{background: 'grey', borderRadius: '5vmin'}}/>
+        <GiCook className="logo" size= '5vmin'/>
       </Col>
       <Col sm={2}>
-        <a href="#about" style={{textDecoration: 'none', color: 'inherit'}}><h2>About</h2></a>
+        <a href="#about" ><h2>About</h2></a>
       </Col>
       <Col sm={2}>
-      <a href="#schedule" style={{textDecoration: 'none', color: 'inherit'}}><h2>Classes</h2></a>
+      <a href="#schedule" ><h2>Classes</h2></a>
       </Col>
       <Col sm={2}>
-        <a href="#contact" style={{textDecoration: 'none', color: 'inherit'}}><h2>Book Event</h2></a>
+        <a href="#contact" ><h2>Book Event</h2></a>
       </Col>
       <Col sm={3}>
-        <a href="#social" style={{textDecoration: 'none', color: 'inherit'}}><h2>Social Media</h2></a>
+        <a href="#social" ><h2>Social Media</h2></a>
       </Col>
     </Row>
   );

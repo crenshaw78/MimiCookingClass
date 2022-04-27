@@ -11,14 +11,15 @@ function BookEvent() {
           {eventList.map((event, i) => (
             <Carousel.Item key={'e'+i}>
               <Row style={{justifyContent:'center'}}>
-                <Col sm={5}>
+                <Col sm={6}>
                     <h4>{event.name}</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </Col>
                 <Col sm={6}>
                   <Image
                     src={require(`../assets/images/${event.image}`)}
                     alt={event.alt}
-                    style={{height: '45vmin', width: 'auto'}}
+                    style={{height: '68.5vmin', width: 'auto', maxWidth: '100%', objectFit: 'cover'}}
                   />
                 </Col>
               </Row>   

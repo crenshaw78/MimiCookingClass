@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Button } from "react-bootstrap";
 import classList from "../assets/js/classArray";
 
 function Schedule() {
@@ -8,11 +8,11 @@ function Schedule() {
     <Row id='schedule' className="top">
       {classList.map((cclass, i) => (
       <Row key={'c'+i}>
-        <Col sm={5} style={{marginBottom: '6vmin'}}>
+        <Col sm={5}>
           <Image fluid
             src={require(`../assets/images/${cclass.image}`)}
             alt={cclass.alt}
-            style={{height: '45vmin', width: '60vmin', objectFit: 'cover'}}
+            className='cooking-class-image'
           />
         </Col>
         <Col sm={7}>
@@ -20,13 +20,13 @@ function Schedule() {
           <p>{cclass.desc}</p>
           <h3>{cclass.day}</h3>
           <Row>
-            <Col sm={4}>
+            <Col sm={6}>
               <p>{cclass.date}</p>
               <p>{cclass.time}</p>
             </Col>
-            <Col sm={4}>
-              <p>{cclass.seats} seats available</p>
+            <Col sm={6}>
               <p>${cclass.cost} / person</p>
+              <Button variant="success" className='enroll-button' type='button'>Enroll Now</Button>
             </Col>
           </Row>
         </Col>

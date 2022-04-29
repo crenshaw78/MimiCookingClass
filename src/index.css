@@ -82,6 +82,7 @@ a {
 
 .enroll-button{
   background: #009A44;
+  margin-bottom: 6vmin;
 }
 
 .formContainer {
@@ -139,6 +140,8 @@ a {
 
 .logo {
   border: none;
+  height: 10vmin;
+  margin-bottom: 2vmin;
 }
 
 .modalBackdrop {

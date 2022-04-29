@@ -18,7 +18,7 @@ const Facebook = () => {
   }, []);
   
   return (
-    <div className="top">
+    <div className="top" style={{ maxWidth: '100%'}}>
       <div id="fb-root"></div>
       <div
         className="fb-like-box"

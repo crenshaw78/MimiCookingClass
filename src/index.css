@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4vmin;
+  font-size: 5vmin;
   color: white;
 }
 
@@ -61,6 +61,12 @@ img  {
 
 a {
   text-decoration: none;
+}
+
+.banner {
+  border: none;
+  height: 15vmin;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 .carousel-item {
@@ -132,8 +138,7 @@ a {
 }
 
 .logo {
-  background: grey;
-  border-radius: 5vmin;
+  border: none;
 }
 
 .modalBackdrop {

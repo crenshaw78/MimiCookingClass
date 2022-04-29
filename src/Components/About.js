@@ -3,13 +3,19 @@ import { Row, Col, Image } from "react-bootstrap";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { GiCookingPot } from "react-icons/gi";
 import { FaUtensils } from "react-icons/fa";
+import  banner  from "../assets/images/Mimi_banner.svg";
 
 function About() {
   
   return (
     <Row id='about' className="top">
       <Col sm={9}>
-        <h1>Mimi's Cooking Class</h1>
+      <img
+          className="banner"
+          src={banner}
+          alt="banner for Mimi's Cooking Class"
+        >
+        </img>
         <h3><FaUtensils color= 'grey' /> Learn to Cook <GiCookingPot color= 'grey' /></h3>
         <p>Mimi is an energetic cooking instructor who is passionate about cooking in general and Ethiopian/Eritrean cuisine in particular.  She finds cooking very relaxing and curative beyond its advantages.  She enjoys sharing her cooking skills with her long list of experience that  includes teaching cooking at community education classes in Minnesota as well as leading cooking classes around the Midwest and Southwest. Mimi's culinary expertise spans cultures and includes everything from Mediterranean to Asian to southern food.</p>
       </Col>

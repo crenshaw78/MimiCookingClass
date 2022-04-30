@@ -12,7 +12,7 @@ function Contact() {
   }
 
   return (
-    <Row>
+    <Row id="contact">
       <Col sm={4}>
         <Button style={{background: '#009A44', margin: '6vmin 10vmin', fontSize: '4vmin'}} onClick={toggleForm}>
           Book Event

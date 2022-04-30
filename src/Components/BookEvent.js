@@ -5,7 +5,7 @@ import eventList from "../assets/js/eventArray";
 function BookEvent() {
 
   return (
-    <Row id='book' className="top">
+    <Row className="top">
         <h1>Book an Event</h1>
         <Carousel fade indicators={false} controls={false}>
           {eventList.map((event, i) => (

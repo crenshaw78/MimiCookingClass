@@ -70,6 +70,10 @@ a {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
+.bottom {
+  margin-bottom: 6vmin;
+}
+
 .carousel-item {
   transition: opacity 5s ease-out;
 }
@@ -191,7 +195,9 @@ a {
 }
 
 .self-photo{
-  height: 55vmin;
+  height: 50vmin;
+  width: auto;
+  object-fit: cover;
 }
 
 .self-photo-container {

@@ -19,13 +19,13 @@ function Tiktok() {
     <div className="top">
       <blockquote 
         className="tiktok-embed" 
-        cite="https://www.tiktok.com/@the_pastaqueen" 
-        data-unique-id="the_pastaqueen"  
+        cite="https://www.tiktok.com/@mimiscookingclass/" 
+        data-unique-id="mimiscookingclass"  
         data-embed-type="creator" 
         style={{width: '360', height: '500'}} 
         > 
         <section> 
-          <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@the_pastaqueen?refer=creator_embed">@the_pastaqueen</a> 
+          <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@mimiscookingclass?refer=creator_embed">@mimiscookingclass</a> 
         </section> 
       </blockquote> 
   </div>

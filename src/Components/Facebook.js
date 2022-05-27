@@ -5,7 +5,7 @@ const Facebook = () => {
     const script = document.createElement('script');
 
     script.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4" 
-    script.nonce="La8M26By"
+    script.nonce="9BypnPZ5"
     script.async = true
     script.defer = true
     script.crossorigin="anonymous"
@@ -18,11 +18,11 @@ const Facebook = () => {
   }, []);
   
   return (
-    <div className="top" style={{ maxWidth: '100%'}}>
+    <div className="top bottom">
       <div id="fb-root"></div>
       <div
         className="fb-like-box"
-        data-href="https://www.facebook.com/nytcooking/"
+        data-href="https://www.facebook.com/mimiscookingclass/"
         data-width="360"
         data-height="600"
         data-colorscheme="light"
@@ -31,10 +31,10 @@ const Facebook = () => {
         data-show-border="false"
       >
         <blockquote
-          cite="https://www.facebook.com/nytcooking/"
+          cite="https://www.facebook.com/mimiscookingclass/"
           className="fb-xfbml-parse-ignore"
         >
-          <a href="https://www.facebook.com/nytcooking">NYT Cooking</a>
+          <a href="https://www.facebook.com/mimiscookingclass/">Easy Ethiopian/Eritrean plus some Global Recipes by Mimi Cooking Classes</a>
         </blockquote>
       </div>
     </div>

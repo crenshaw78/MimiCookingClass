@@ -20,15 +20,15 @@ function About() {
         <p>Mimi is an energetic cooking instructor who is passionate about cooking in general and Ethiopian/Eritrean cuisine in particular.  She finds cooking very relaxing and curative beyond its advantages.  She enjoys sharing her cooking skills with her long list of experience that  includes teaching cooking at community education classes in Minnesota as well as leading cooking classes around the Midwest and Southwest. Mimi's culinary expertise spans cultures and includes everything from Mediterranean to Asian to southern food.</p>
       </Col>
       <Col sm={3} className='self-photo-container'>
-        <Image 
+        <Image fluid
           src={require('../assets/images/self-photo.jpg')}
           className='self-photo'
           alt='Mimi, the cooking instructor'
         />
         <Col sm={2} className='self-photo-textbox'>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"> <FaFacebook size={'6vmin'} style={{background:'white', borderRadius: '5vmin', margin: '0 2vmin 2vmin 0'}} /> </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"> <FaInstagram color='white' size={'6vmin'} style={{backgroundImage:'linear-gradient(to top right, yellow, red, purple)', borderRadius: '1vmin', margin: '0 2vmin 2vmin 0'}}/> </a>
-            <a href="https://www.tiktok.com/en/" target="_blank" rel="noreferrer"> <FaTiktok color='white' size={'6vmin'} style={{background:'black', borderRadius: '5vmin', margin: '0 2vmin 2vmin 0'}}/> </a>
+            <a href="https://www.facebook.com/mimiscookingclass/" target="_blank" rel="noreferrer"> <FaFacebook size={'6vmin'} style={{background:'white', borderRadius: '5vmin', margin: '0 2vmin 2vmin 0'}} /> </a>
+            <a href="https://www.instagram.com/easyethiopianeritreancooking/" target="_blank" rel="noreferrer"> <FaInstagram color='white' size={'6vmin'} style={{backgroundImage:'linear-gradient(to top right, yellow, red, purple)', borderRadius: '1vmin', margin: '0 2vmin 2vmin 0'}}/> </a>
+            <a href="https://www.tiktok.com/@mimiscookingclass/" target="_blank" rel="noreferrer"> <FaTiktok color='white' size={'6vmin'} style={{background:'black', borderRadius: '5vmin', margin: '0 2vmin 2vmin 0'}}/> </a>
         </Col>
       </Col>
     </Row>

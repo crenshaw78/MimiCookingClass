@@ -1,6 +1,6 @@
 const galleryPictureList = [
   {
-    image: 'gallery1.jpeg',
+    image: 'gallery6.jpg',
     message: 'Short message'
   },
   {
@@ -20,7 +20,7 @@ const galleryPictureList = [
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
   {
-    image: 'gallery6.jpg',
+    image: 'gallery1.jpeg',
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   }
 ]

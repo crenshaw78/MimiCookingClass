@@ -10,7 +10,7 @@ const foodPictureList = [
     image: "food3.jpg"
   },
   {
-    image: "food4.jpg"
+    image: "beef-kebabs.jpg"
   }
 ]
 

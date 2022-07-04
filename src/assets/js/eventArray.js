@@ -1,33 +1,28 @@
 const eventList = [
   {
-    image: 'class3.jpg',
+    image: 'event1.jpg',
     alt: 'short description',
-    name: 'Receptions'
+    name: 'Graduations'
   },
   {
-    image: 'class2.jpg',
+    image: 'event2.jpg',
     alt: 'short description',
-    name: 'Formal Dinners'
+    name: 'Birthdays'
   },
   {
-    image: 'class3.jpg',
+    image: 'event3.jpg',
     alt: 'short description',
-    name: 'Hors D\'oeuvres'
+    name: 'Engagements'
   },
   {
-    image: 'class2.jpg',
+    image: 'event4.jpg',
     alt: 'short description',
-    name: 'Corporate Catering'
+    name: 'Anniversaries'
   },
   {
-    image: 'class3.jpg',
+    image: 'event5.jpg',
     alt: 'short description',
     name: 'Special Events'
-  },
-  {
-    image: 'class2.jpg',
-    alt: 'short description',
-    name: 'Charcuterie'
   }
 ]
 

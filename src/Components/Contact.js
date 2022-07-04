@@ -21,7 +21,7 @@ function Contact() {
       </Col>
       <Col sm={4}>
         <h3 className="top">Mimi's Cooking Class</h3>
-        <a href="tel:+08885551212" style={{textDecoration: 'none', color: 'inherit'}}><p>(888) 555-1212</p></a>
+        <a href="tel:+08885551212" style={{textDecoration: 'none', color: 'inherit'}}><p>(952) 220-9333</p></a>
         <a href="mailto:mimiscookingclass@gmail.com" style={{textDecoration: 'none', color: 'inherit'}}><p>mimiscookingclass@gmail.com</p></a>
       </Col>
       <Col sm={4}>
